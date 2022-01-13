@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url("https://www.fegreppa.es/wp-content/uploads/2018/04/slide1-2.jpg");
+}
+
+.containerRegister {
+    display: flex;
+    width: 70%;
+    height: 80vh;
+    margin: 0 auto;
+    margin-top: 100px;
+    box-shadow: 7px 7px 25px 1px #283d3b;
+}
+.imgLogo {
+    width: 50%;
+    background:linear-gradient(#772e25, #c44536);
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.registerlogo{
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    background-color: #edddd4;
+    width: 100%;
+    text-align: center;
+    
+}
+.registerSingUp{
+   margin-top: 120px;
+   font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+   font-size: 50px;
+   font-weight: 900;
+}
+.registerSingUp h2{
+    color: #edddd4;
+}
+.registerSingUp hr{
+    height: 10px;
+    background-color: #edddd4;
+    border-radius: 10px;
+    margin-bottom: 120px;
+    width: 60%;
+}
+
+.midCircle img {
+    border-radius:50%;
+    background-color: #edddd4;
+    height:100px;
+    position:absolute;
+    top:50%;
+    left: 47%;
+    display: none;
+}
+
+.formRegister {
+    width: 50%;
+    background-color: #edddd4;
+    border-radius: 0 10px 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.styleInput {
+    background: #edddd4 ;
+    border: 3px solid #197278;
+    border-radius: 5px 5px 5px 5px;
+    color: black;
+    font-size: 12px;
+    padding: 5px;
+    margin-top: 10px;
+    width: 95%;
+    height: 40px;
+}
+.styleDivInput {
+    text-align:center;
+    margin-top: 20px;
+}
+.styleButtonForm {
+    
+    margin-top: 10px;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background: #197278 ;
+    border: 3px solid #197278;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 900;
+    font-size: 25px;
+}
+.styleLabel {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+    margin-right: 5px;
+    color: black;
+
+}
+.registerIcon a img{
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+.registerParraf{
+    margin-right: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    margin-top: 2px;
+}
+.registerAccountWith{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+@media  screen and (max-width:767px) {
+    .containerRegister{
+        display: flex;
+        flex-direction: column;
+        margin-left: 170px;
+    }
+    .midCircle{
+        display: none;
+    }
+    .formRegister{
+        border-radius: 0 0 10px 10px;
+        width: 80%;
+    }
+    .imgLogo{
+        border-radius: 10px 10px 0 0;
+        width: 80%;
+    }
+    
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .containerRegister{
+        display: flex;
+        flex-direction: column;
+    }
+    .midCircle{
+        display: none;
+    }
+    .formRegister{
+        border-radius: 0 0 10px 10px;
+        width: 100%;  
+    }
+    .imgLogo{
+        border-radius: 10px 10px 0 0;
+        width: 100%;
+    }
+}
