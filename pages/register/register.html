@@ -31,18 +31,18 @@
                 <img src="/assets/img/next.png" alt="">
             </div>
             <div class="formRegister">
-                <form action=" " onsubmit="registerUser(event)">
+                <form id="formJs" onsubmit="registerUser(event)">
                     <div class="styleDivInput">
-                        <label for="formUser" class="styleLabel">NAME</label><br>
-                        <input type="text" id="formUser" class="styleInput" required>
+                        <label for="fullName" class="styleLabel">NAME</label><br>
+                        <input type="text" id="fullName" class="styleInput" name="fullName" required>
                     </div>
                     <div class="styleDivInput">
-                        <label for="formPassword" class="styleLabel">PASSWORD</label><br>
-                        <input type="password" id="formPassword" class="styleInput" required>
+                        <label for="password" class="styleLabel">PASSWORD</label><br>
+                        <input type="password" id="password" name="password" class="styleInput" required>
                     </div>
                     <div class="styleDivInput">
-                        <label for="formEmail" class="styleLabel">EMAIL</label><br>
-                        <input type="email" id="formEmail" class="styleInput" required>
+                        <label for="email" class="styleLabel">EMAIL</label><br>
+                        <input type="email" id="email" name="email" class="styleInput" required>
                     </div>
                     <div class="styleDivInput">
                         <button type="submit" class="styleButtonForm">SING UP</button>
@@ -55,7 +55,7 @@
                             <hr>
                         </div>
                         <div class="registerIcon">
-                            <a href="#"><img src="/assets/img/img/ " alt=""></a>
+                            <a href="#"><img src="/assets/img/buscar.png" alt=""></a>
                         </div>
                         <div class="registerIcon">
                             <a href="#"><img src="/assets/img/facebook.png" alt=""></a>

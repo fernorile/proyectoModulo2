@@ -1,39 +1,28 @@
-class User {
-    constructor(nombreCompleto, correo, edad, contraseña, precio, canAccess = true) {
-        this.id = new Date().getTime();
-        this.fullName = nombreCompleto;
-        this.email = correo;
-        this.age = edad;
-        this.password = contraseña;
-        this.canAccess = canAccess;
-        this.role = 'CLIENT_ROLE';
-        this._usdPrice = precio;
-    }
-    // sayHello() {
-    //     return `Bienvenido nuevamente ${this.fullName}`;
-    // }
-    // get finalPrice() {
-    //     return (this._usdPrice * 205) * 1.21 ;
-    // }
-    // set updatePrice(price) {
-    //     this._usdPrice = price * 1.07;
-    }
+let users = [];
+localStorage.setItem("users", JSON.stringify(users));
+users = localStorage.getItem("users");
+users = JSON.parse(users);
 
+class User {
+    constructor(fullName, email, password, canAccess = true) 
+    {
+        this.id = new Date().getTime();
+        this.fullName = fullName;
+        this.email = email;
+        this.password = password;
+        this.canAccess = canAccess;
+        this.role = "CLIENT_ROLE";
+    }
+}
 
 const registerUser = (evt) => {
     evt.preventDefault();
-    const registerUser = document.querySelector(`#registerUser`);
-    console.log(registerUser.elements);
-    const {formUser, formPassword, formEmail} = registerUser.elements;
-    const user = new User (fullName.value, email.value, parseInt(age.value), password.value)
-    console.log(`nuevo usuario`, user)
+    let localUsers = JSON.parse(localStorage.getItem("users"));
+    const formJs = document.querySelector("#formJs");
+    const {fullName, email, password} = formJs.elements;
+    const user = new User(fullName.value, email.value, password.value);
 
-    if(localUsers.some(localUser => localUser.email === user.email)) return alert('El usuario ya existe')
+    if(localUsers.some(localUser => localUser.email === user.email)) return alert("El usuario ya existe")
     localUsers.push(user);
-    localStorage.setItem('users', JSON.stringify(localUsers))
-    registerForm.reset();
-    registerForm.elements[0].focus()
-
+    localStorage.setItem("users", JSON.stringify(localUsers));
 }
-
-
