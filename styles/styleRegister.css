@@ -35,11 +35,11 @@ body {
     
 }
 .registerSingUp{
-   margin-top: 120px;
-   font-family: 'Roboto', sans-serif;
+    margin-top: 120px;
+    font-family: 'Roboto', sans-serif;
     font-family: 'Roboto Slab', serif;
-   font-size: 50px;
-   font-weight: 900;
+    font-size: 50px;
+    font-weight: 900;
 }
 .registerSingUp h2{
     color: #edddd4;
