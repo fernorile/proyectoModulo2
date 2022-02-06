@@ -1,4 +1,4 @@
-let users = [];
+let users = JSON.parse(localStorage.getItem("users")) || [];
 localStorage.setItem("users", JSON.stringify(users));
 users = localStorage.getItem("users");
 users = JSON.parse(users);
