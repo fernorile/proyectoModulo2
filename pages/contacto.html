@@ -43,6 +43,7 @@
             </nav>
         </header>
     </div>
+
     <main  id="contact-main">
         <div style="height: 50px">
         </div>
@@ -53,31 +54,29 @@
                 ==        FORMULARIO         ==
                 =============================== -->
                 <div class="col-sm-12 col-md-6" id="fondo">
-                    <h2> CONTACTO </h2>
+                    <h2> CONTACTANOS </h2>
                     <hr>
-                    <form>
+                    <form id="form">
                         <!-- NOMBRE -->
                         <div class="mb-3">
                             <label for="ContactoNombre" class="form-label2">Nombre</label>
-                            <input type="text" class="form-control" id="ContactoNombre" aria-describedby="emailHelp">
+                            <input type="text" class="form-control" name="nombre" id="ContactoNombre" required aria-describedby="emailHelp">
                         </div>
                         <!-- MAIL -->
                         <div class="mb-3">
                             <label for="ContactoEmail" class="form-label2">Correo electrónico</label>
-                            <input type="email" class="form-control" id="ContactoEmail" aria-describedby="emailHelp" placeholder="rollingCode@gmail.com">
+                            <input type="email" class="form-control" name="email" id="ContactoEmail" required aria-describedby="emailHelp" placeholder="rollingCode@gmail.com">
                             <div id="emailHelp" class="form-text"> <i>No compartiremos tu correo electrónico con nadie más.</i></div>
                         </div>
                         <!-- MENSAJE -->
                         <div class="mb-3">
                             <label for="ContactoMensaje" class="form-label2">Deja tu mensaje</label>
-                            <textarea class="form-control" id="ContactoMensaje" rows="6" placeholder="Escribe tu consulta"></textarea>
+                            <textarea class="form-control" name="mensaje" id="ContactoMensaje" required rows="6" placeholder="Escribe tu consulta"></textarea>
                             
                         </div>
-                        <!-- BOTÓN DE LA VENTANA MODAL -->
-                        <a class="btn btn-primary" href="/pages/404.html" tabindex="-1" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#VentanaModalEnviar">ENVIAR</a>
-                    </form>
-    
-    
+                        <!-- BOTÓN ENVIO-->
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>    
                 </div>
                 
                 <!-- ==========================
@@ -145,5 +144,7 @@
         </div>
         </div>
     </footer>
+    
+    <script src="/JS/contacto.js"></script>
 </body>
 </html>
