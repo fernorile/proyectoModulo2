@@ -16,31 +16,44 @@
     <title>DELICIAS</title>
 </head>
 <body>
-        <header class="hero">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary" >
-            <div class="container-fluid">
-                <div class="container">
-                    <a class="navbar-brand" href="/index.html">
-                        <img src="/assets/img/cake_logo1.png" alt="" width="50" height="me-auto">
+    <!-- ====================
+    ==       HEADER        ==
+    ========================= -->
+    <div id="header">
+        <header id="durazno">
+            <!-- navbar open -->
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top m-0 px-3">
+                <div class="navbar-container container-fluid m-0 p-0">
+                    <!-- LOGO -->
+                    <a class="logo" href="/index.html">
+                        <img src="/assets/img/cake_logo1.png" alt="logo cake" width="45" height="45">
                     </a>
+                    <!-- MENU DEBLEGABLE -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars" style="color:rgba(255, 255, 255, 0.575); font-size:25px;"></i>
+                        </span>
+                    </button>
+                    <!-- MENU -->
+                    <div class="navbar-sections float-r collapse navbar-collapse flex-grow-1 me-0"  id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-link" href="/pages/nosotros.html">Quienes somos  |</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-link" href="/pages/register/register.html">Registrarse  |</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-link" aria-current="page" href="/pages/login.html"> Login</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <a class="navbar-brand" href="#">Inicio</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="/pages/register/register.html">Registro</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+            </nav>
         </header>
+    </div>
+    <main>
         <article>
             <h1>Tarta de Frutilla</h1>
 
@@ -107,60 +120,57 @@
             <br> <br> <br>
 
 
-            <!-- footer -->
-            <footer class="site-footer">
-            <div class="container">
-                <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <h6>About</h6>
-                    <p class="text-justify"><i>Algo sobre nosotros </i> Somos creadores de recetas</recetas></p>
-                </div>
-        
-                <div class="col-xs-6 col-md-3">
-                    <h6>Categories</h6>
-                    <ul class="footer-links">
-                    <li><a href="#">Tortas</a></li>
-                    <li><a href="#">Postres</a></li>
-                    <li><a href="#">Muffins</a></li>
-                    <li><a href="#">Tartas</a></li>
-
-                    </ul>
-                </div>
-        
-                <div class="col-xs-6 col-md-3">
-                    <h6>Quick Links</h6>
-                    <ul class="footer-links">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Contribute</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Sitemap</a></li>
-                    </ul>
-                </div>
-                </div>
-                <hr>
-            </div>
-            <div class="container">
-                <div class="row">
-                <div class="col-md-8 col-sm-6 col-xs-12">
-                    <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
-                    <a href="#">NOSOTROS</a>.
-                    </p>
-                </div>
-        
-                <div class="col-md-4 col-sm-6 col-xs-12">
-                    <ul class="social-icons">
-                    <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
-                    <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
-                    </ul>
-                </div>
-                </div>
-            </div>
-            </footer>
-        
         </article>
-        <script src="/styles/bootstrap.css"></script>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+            <p class="text-justify"><i>Algo sobre nosotros </i> Somos creadores de recetas</recetas></p>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+                <li><a href="#chocolate">Chocolate</a></li>
+                <li><a href="#frutales">Frutales</a></li>
+                <li><a href="#vasos">En vaso</a></li>
+                <li><a href="/pages/">Muffins</a></li>
+
+            </ul>
+            </div>
+
+            <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <!-- <li><a href="#">Sitemap</a></li> -->
+            </ul>
+            </div>
+        </div>
+        <hr>
+        </div>
+        <div class="container">
+        <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+                <a href="/pages/nosotros.html" style="text-decoration:none;">NOSOTROS</a>.
+            </p>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+                <li><a class="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                <li><a class="twitter" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                <li><a class="dribbble" href="https://dribble.com/"><i class="fa fa-dribbble"></i></a></li>
+                <li><a class="linkedin" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script src="/styles/bootstrap.css"></script>
 </body>
 </html>

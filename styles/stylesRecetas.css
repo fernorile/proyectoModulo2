@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    /* background-image: url(/assets/img/postresVaso/bannerparfait.jpg); */
+    background-image: url(/assets/img/postresVaso/bannerparfait.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 500px;
@@ -60,5 +60,6 @@ p{
     padding: 10px 100px;
     margin: 10px;
     background-color:rgb(201, 188, 188);
-
 }
+
+

@@ -9,42 +9,47 @@
     <title>RECETAS</title>
 </head>
 <body>
-    <header class="hero">
-
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary" >
-            <div class="container-fluid">
-                <div class="container">
-                        <a class="navbar-brand ms-4" href="/index.html">
-                            <img src="/assets/img/cake_logo1.png" alt="" width="55" height="me-auto">
-                        </a>
-                </div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+    <!-- ====================
+    ==       HEADER        ==
+    ========================= -->
+    <div id="header">
+        <header>
+            <!-- navbar open -->
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top m-0 px-3">
+                <div class="navbar-container container-fluid m-0 p-0">
+                    <!-- LOGO -->
+                    <a class="logo" href="/index.html">
+                        <img src="/assets/img/cake_logo1.png" alt="logo cake" width="45" height="45">
+                    </a>
+                    <!-- MENU DEBLEGABLE -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
                         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon">
-                        <i class="fas fa-bars" style="color:rgba(255, 255, 255, 0.575); font-size:20px;"></i>
+                        <i class="fas fa-bars" style="color:rgba(255, 255, 255, 0.575); font-size:25px;"></i>
                         </span>
-                </button>
-                <div class="navbar-sections float-r collapse navbar-collapse flex-grow-1 me-0 stylelabel1" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link navbar-brand"  href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navbar-brand"  href="/pages/galeria.html">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navbar-brand" href="/pages/register/register.html">Registrarse</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link navbar-brand" aria-current="page" href="/pages/login.html">Login</a>
-                        </li>
-                    </ul>
+                    </button>
+                    <!-- MENU -->
+                    <div class="navbar-sections float-r collapse navbar-collapse flex-grow-1 me-0"  id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-link" href="/pages/nosotros.html">Quienes somos  |</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-link" href="/pages/register/register.html">Registrarse  |</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-link" aria-current="page" href="/pages/login.html"> Login</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </nav>
-    </header>
-    <button class="btn btn-primary m-4" data-bs-toggle="modal" data-bs-target="#VentanaModalNuevo">Nuevo ingreso</button>
-        <!-- Ventana Modal de la Suscripción -->
+            </nav>
+        </header>
+    </div>
+
+    <div class="botonAgregar mt-5">
+        <button class="btn btn-primary m-4" data-bs-toggle="modal" data-bs-target="#VentanaModalNuevo">Nuevo ingreso</button>
+        <!-- Ventana Modal Agregar nuevo -->
         <div class="modal fade" id="VentanaModalNuevo" tabindex="-1" aria-labelledby="ingresoModalLabel" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -55,7 +60,7 @@
                     </div>
                     <!-- Modal body -->
                     <div class="modal-body">
-                        <form>
+                        <form autocomplete="off" onsubmit="event.preventDefault();onFormSubmit();">
                             <!-- CODIGO -->
                             <div class="mb-3">
                                 <label class="form-label">Codigo</label>
@@ -92,12 +97,14 @@
                 </div>          
             </div>
         </div>
-
-
-<!-- <div class="container mt-4">
+    </div>
+        
+        <br><br><br><br><br><br><hr>
+        
+        <div class="container mt-4">
     <div class="row">
         <div class="col-md-6">
-            <table class="table table-info table-hover">
+            <table class="table table-info table-hover" id="lista">
                 <thead>
                     <tr>
                         <th scope="col">Codigo</th>
@@ -108,23 +115,22 @@
                         <th scope="col">Opciones</th>
                     </tr>
                 </thead>
-                <tbody id="tbody">
-                    <tr>
+                <tbody id="cuerpoLista">
+                        <tr>
                         <th scope="row">1</th>
                         <td>Chocolinas</td>
                         <td>Chocolate</td>
+                        <td>Buenardas</td>
+                        <td><i></i></td>
                         <td></td>
-                        <td>moco</td>
-                        <td>dad</td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
-</div> -->
-
+</div>
+<hr>
+    <script src="/JS/administracion.js"></script>
     <script src="/JS/bootstrap.js"></script>
-    <script src="/JS/admin.js"></script>
-    <script src="/JS/jquery.js"></script>
 </body>
 </html>
