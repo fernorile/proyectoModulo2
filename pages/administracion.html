@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/bootstrap.css">
+    <link rel="stylesheet" href="/styles/stylesIndex.css">
+    <title>RECETAS</title>
+</head>
+<body>
+    <header class="hero">
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary" >
+            <div class="container-fluid">
+                <div class="container">
+                        <a class="navbar-brand ms-4" href="/index.html">
+                            <img src="/assets/img/cake_logo1.png" alt="" width="55" height="me-auto">
+                        </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars" style="color:rgba(255, 255, 255, 0.575); font-size:20px;"></i>
+                        </span>
+                </button>
+                <div class="navbar-sections float-r collapse navbar-collapse flex-grow-1 me-0 stylelabel1" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link navbar-brand"  href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-brand"  href="/pages/galeria.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-brand" href="/pages/register/register.html">Registrarse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link navbar-brand" aria-current="page" href="/pages/login.html">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <button class="btn btn-primary m-4" data-bs-toggle="modal" data-bs-target="#VentanaModalNuevo">Nuevo ingreso</button>
+        <!-- Ventana Modal de la Suscripción -->
+        <div class="modal fade" id="VentanaModalNuevo" tabindex="-1" aria-labelledby="ingresoModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal header -->
+                    <div class="modal-header">
+                        <h5 class="modal-title-S" id="ingresoModalLabel">Nuevo Ingreso</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <form>
+                            <!-- CODIGO -->
+                            <div class="mb-3">
+                                <label class="form-label">Codigo</label>
+                                <input type="number" class="form-control" id="codigo" placeholder="Codigo">
+                            </div>
+                            <!-- NOMBRE -->
+                            <div class="mb-3">
+                                <label class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                            </div>
+                            <!-- CATEGORIA -->
+                            <div class="mb-3">
+                                <label for="ContactoSigno  " class="form-label">Categoria</label>
+                                <select id="disabledSelect" class="form-select">
+                                    <option></option>
+                                    <option>Chocolate</option>
+                                    <option>Frutales</option>
+                                    <option>Individuales</option>
+                                    <option>Heladas</option>
+                                </select>
+                                </div>
+                            <!-- DESCRIPCION -->
+                            <div class="mb-3">
+                                <label class="form-label">Descripcion</label>
+                                <textarea class="form-control" id="Descripcion" placeholder="Descripcion" cols="30" rows="2"></textarea>
+                            </div>                            
+                        </form>                     
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" onclick="addReceta()">Confirmar</button>
+                    </div>
+                </div>          
+            </div>
+        </div>
+
+
+<!-- <div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6">
+            <table class="table table-info table-hover">
+                <thead>
+                    <tr>
+                        <th scope="col">Codigo</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Categoria</th>
+                        <th scope="col">Descripcion</th>
+                        <th scope="col">Publicado</th>
+                        <th scope="col">Opciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Chocolinas</td>
+                        <td>Chocolate</td>
+                        <td></td>
+                        <td>moco</td>
+                        <td>dad</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div> -->
+
+    <script src="/JS/bootstrap.js"></script>
+    <script src="/JS/admin.js"></script>
+    <script src="/JS/jquery.js"></script>
+</body>
+</html>
