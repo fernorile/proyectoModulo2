@@ -35,6 +35,9 @@
                                 <a class="nav-link" id="nav-link" href="/pages/nosotros.html">Quienes somos  |</a>
                             </li>
                             <li class="nav-item">
+                                <a class="nav-link" id="nav-link" href="/pages/contacto.html">Contacto  |</a>
+                            </li>
+                            <li class="nav-item">
                                 <a class="nav-link" id="nav-link" href="/pages/register/register.html">Registrarse  |</a>
                             </li>
                             <li class="nav-item">
@@ -47,61 +50,7 @@
         </header>
     </div>
 
-    <div class="botonAgregar mt-5">
-        <button class="btn btn-primary m-4" data-bs-toggle="modal" data-bs-target="#VentanaModalNuevo">Nuevo ingreso</button>
-        <!-- Ventana Modal Agregar nuevo -->
-        <div class="modal fade" id="VentanaModalNuevo" tabindex="-1" aria-labelledby="ingresoModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <!-- Modal header -->
-                    <div class="modal-header">
-                        <h5 class="modal-title-S" id="ingresoModalLabel">Nuevo Ingreso</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                        <form autocomplete="off" onsubmit="event.preventDefault();onFormSubmit();">
-                            <!-- CODIGO -->
-                            <div class="mb-3">
-                                <label class="form-label">Codigo</label>
-                                <input type="number" class="form-control" id="codigo" placeholder="Codigo">
-                            </div>
-                            <!-- NOMBRE -->
-                            <div class="mb-3">
-                                <label class="form-label">Nombre</label>
-                                <input type="text" class="form-control" id="nombre" placeholder="Nombre">
-                            </div>
-                            <!-- CATEGORIA -->
-                            <div class="mb-3">
-                                <label for="ContactoSigno  " class="form-label">Categoria</label>
-                                <select id="disabledSelect" class="form-select">
-                                    <option></option>
-                                    <option>Chocolate</option>
-                                    <option>Frutales</option>
-                                    <option>Individuales</option>
-                                    <option>Heladas</option>
-                                </select>
-                                </div>
-                            <!-- DESCRIPCION -->
-                            <div class="mb-3">
-                                <label class="form-label">Descripcion</label>
-                                <textarea class="form-control" id="Descripcion" placeholder="Descripcion" cols="30" rows="2"></textarea>
-                            </div>                            
-                        </form>                     
-                    </div>
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="submit" class="btn btn-primary" data-bs-dismiss="modal" onclick="addReceta()">Confirmar</button>
-                    </div>
-                </div>          
-            </div>
-        </div>
-    </div>
-        
-        <br><br><br><br><br><br><hr>
-        
-        <div class="container mt-4">
+<div class="container mt-4">
     <div class="row">
         <div class="col-md-6">
             <table class="table table-info table-hover" id="lista">

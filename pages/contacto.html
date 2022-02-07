@@ -1,25 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="/styles/bootstrap.css">
-    <link rel="stylesheet" href="/styles/stylesRecetas.css">
     <link rel="stylesheet" href="/styles/stylesIndex.css">
-    
-    <script src="https://kit.fontawesome.com/6871c55f9e.js" crossorigin="anonymous"></script>
-
     <title>DELICIAS</title>
 </head>
 <body>
-    <!-- ====================
-    ==       HEADER        ==
-    ========================= -->
     <div id="header">
-        <header id="chia">
+        <header>
             <!-- navbar open -->
             <nav class="navbar navbar-expand-lg navbar-light fixed-top m-0 px-3">
                 <div class="navbar-container container-fluid m-0 p-0">
@@ -41,9 +32,6 @@
                                 <a class="nav-link" id="nav-link" href="/pages/nosotros.html">Quienes somos  |</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="nav-link" href="/pages/contacto.html">Contacto  |</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link" id="nav-link" href="/pages/register/register.html">Registrarse  |</a>
                             </li>
                             <li class="nav-item">
@@ -55,53 +43,59 @@
             </nav>
         </header>
     </div>
-    <main>
-        <article>
-            <h1>Budin de Chia y Coco</h1>
-
-            <div class="nota">
-                <div class="ingredientes">
-                    <h2>Ingredientes</h2>
-                    <ul class="list-group">
-                        <li>2 vasos de leche de coco (también sirven otras leches de origen animal o vegetal)/li>
-                        <li>½ vaso de semillas de chía</li>
-                        <li>1 cda de sirope de arce, agave o miel</li>
-                        <li>1 chorro de esencia de vainilla (o ½ vaina)</li>
-                        <li>½ cdta canela molida</li>
-                        <li>1 pizca cardomomo molido (opcional)</li>
-                        <li>1 puñado de coco rallado</li>
-                        <li>Mango y/o otras frutas (troceadas)</li>
-                    </ul>
+    <main  id="contact-main">
+        <div style="height: 50px">
+        </div>
+    
+        <div class="container my-4">
+            <div class="row">  
+                <!-- ==========================
+                ==        FORMULARIO         ==
+                =============================== -->
+                <div class="col-sm-12 col-md-6" id="fondo">
+                    <h2> CONTACTO </h2>
+                    <hr>
+                    <form>
+                        <!-- NOMBRE -->
+                        <div class="mb-3">
+                            <label for="ContactoNombre" class="form-label2">Nombre</label>
+                            <input type="text" class="form-control" id="ContactoNombre" aria-describedby="emailHelp">
+                        </div>
+                        <!-- MAIL -->
+                        <div class="mb-3">
+                            <label for="ContactoEmail" class="form-label2">Correo electrónico</label>
+                            <input type="email" class="form-control" id="ContactoEmail" aria-describedby="emailHelp" placeholder="rollingCode@gmail.com">
+                            <div id="emailHelp" class="form-text"> <i>No compartiremos tu correo electrónico con nadie más.</i></div>
+                        </div>
+                        <!-- MENSAJE -->
+                        <div class="mb-3">
+                            <label for="ContactoMensaje" class="form-label2">Deja tu mensaje</label>
+                            <textarea class="form-control" id="ContactoMensaje" rows="6" placeholder="Escribe tu consulta"></textarea>
+                            
+                        </div>
+                        <!-- BOTÓN DE LA VENTANA MODAL -->
+                        <a class="btn btn-primary" href="/pages/404.html" tabindex="-1" aria-disabled="true" data-bs-toggle="modal" data-bs-target="#VentanaModalEnviar">ENVIAR</a>
+                    </form>
+    
+    
                 </div>
-
-                <h2>Preparacion</h2>
-
-                <strong>Paso 1</strong>
-
-                <p>Mezcla en un bol la leche de coco, la canela, el cardomomo molido, la vainilla y el edulcorante. Bate con varillas.</p>
-
-
-                <p><strong>Paso 2</strong> <br>
-                    Agrega las semillas de chía y mezcla de nuevo. Espera unos minutos y bate de nuevo.</p>
-
-
-                <p><strong>Paso 3</strong><br>
-                    Vierte la mezcla en vasos pequeños, tarros o copas y cúbrelos con papel film.</p>
-
-
-
-                <p><strong>Paso 4</strong><br>
-                    Refrigéralos durante mínimo 8 horas (mejor si son 24 horas o más).
-                </p>
-
-
-                <p><strong>Paso 5</strong><br>
-                    Al servir, coloca los trozos de mango en cada vaso. Finalmente, espolvorea con un puñado de coco rallado.</p>
-
+                
+                <!-- ==========================
+                ==           MAPA            ==
+                =============================== -->
+                <div class="col-sm-12 col-md-6">
+                    <h2> CONOCE NUESTRAS SEDES </h2>
+                    <hr>
+                    <!-- MAPA 1 -->
+                    <div>
+                    <h4> <i>RollingCode</i></h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.453309303816!2d-65.2085757146679!3d-26.836690259474654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94225d3ad7f30f1d%3A0xf8606cd659b8e3e4!2sRollingCode%20School!5e0!3m2!1ses!2sar!4v1644255626447!5m2!1ses!2sar" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <hr>
+                    </div>
+                </div>
             </div>
-            <br> <br> <br>
-        </article>
-    </main>
+        </div>
+        </main>
     <footer class="site-footer">
         <div class="container">
         <div class="row">
@@ -109,7 +103,7 @@
             <h6>About</h6>
             <p class="text-justify"><i>Algo sobre nosotros </i> Somos creadores de recetas</recetas></p>
             </div>
-
+    
             <div class="col-xs-6 col-md-3">
             <h6>Categories</h6>
             <ul class="footer-links">
@@ -117,16 +111,16 @@
                 <li><a href="#frutales">Frutales</a></li>
                 <li><a href="#vasos">En vaso</a></li>
                 <li><a href="#heladas">Heladas</a></li>
-
+    
             </ul>
             </div>
-
+    
             <div class="col-xs-6 col-md-3">
             <h6>Quick Links</h6>
             <ul class="footer-links">
                 <li><a href="/pages/nosotros.html">About Us</a></li>
-                    <li><a href="/pages/404.html">Contact Us</a></li>
-                    <li><a href="https://www.google.com/maps/place/RollingCode+School/@-26.837036,-65.2086502,16.71z/data=!4m5!3m4!1s0x94225d3ad7f30f1d:0xf8606cd659b8e3e4!8m2!3d-26.8367009!4d-65.2072018" target="_blank">Sitemap</a></li>
+                        <li><a href="/pages/404.html">Contact Us</a></li>
+                        <li><a href="https://www.google.com/maps/place/RollingCode+School/@-26.837036,-65.2086502,16.71z/data=!4m5!3m4!1s0x94225d3ad7f30f1d:0xf8606cd659b8e3e4!8m2!3d-26.8367009!4d-65.2072018" target="_blank">Sitemap</a></li>
             </ul>
             </div>
         </div>
@@ -139,7 +133,7 @@
                 <a href="/pages/nosotros.html" style="text-decoration:none;">NOSOTROS</a>.
             </p>
             </div>
-
+    
             <div class="col-md-4 col-sm-6 col-xs-12">
             <ul class="social-icons">
                 <li><a class="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
@@ -151,6 +145,5 @@
         </div>
         </div>
     </footer>
-    <script src="/styles/bootstrap.css"></script>
 </body>
 </html>

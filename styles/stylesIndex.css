@@ -319,6 +319,16 @@ article {
   background-size:cover;
 }
 
+/* PAGINA CONTACTO */
+
+#Modal001 {
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 5px;
+}
+
+
 /* Clase para hacer redondas las imagenes */
 .radius {
   border-radius: 70%;
