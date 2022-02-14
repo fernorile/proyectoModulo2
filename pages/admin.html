@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ESTILOS BOOSTSTRAP  -->
+    <link rel="stylesheet" href="/styles/bootstrap.css">
+    <!-- ESTILOS PROPIOS DEL INDEX  -->
+    <link rel="stylesheet" href="/styles/stylesIndexNew.css">
+    <!-- ESTILOS ADMIN  -->
+    <link rel="stylesheet" href="/styles/admin.css">
+    <!-- FONT AWESOME  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- SWEET ALERT  -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Administracion</title>
+</head>
+
+<body>
+    <div id="header">
+        <header>
+            <!-- navbar open -->
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top m-0 px-3">
+                <div class="navbar-container container-fluid m-0 p-0">
+                    <!-- LOGO -->
+                    <a class="logo" href="/index.html">
+                        <img src="/assets/img/cake_logo1.png" alt="logo cake" width="45" height="45">
+                    </a>
+                    <!-- MENU DEBLEGABLE -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars" style="color:rgba(255, 255, 255, 0.575); font-size:25px;"></i>
+                        </span>
+                    </button>
+                    <!-- MENU -->
+                    <div class="navbar-sections float-r collapse navbar-collapse flex-grow-1 me-0"  id="navbarNavDropdown">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-link" href="/pages/nosotros.html">Quienes somos  |</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-link" href="/pages/contacto.html">Contacto  |</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-link" href="/pages/register/register.html">Registrarse  |</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-link" aria-current="page" href="/pages/login.html"> Login</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <!--
+        ======================================
+        ==		 CONTENEDOR PRINCIPAL     	==
+        ====================================== -->
+        <div class="container my-5">
+
+            <!--
+            ======================================
+            ==		       TABLA     	         ==
+            ====================================== -->
+            <section id="adminTable">
+                <div class="bg-white rounded-3 p-4 border border-dark">
+                    <!-- BOTON DE AGREGAR  -->
+                    <div class="row mb-1 px-4 d-flex align-items-center">
+                        <div class="col-9">
+                            <h1 class="d-none">Juegos disponibles</h1>
+                        </div>
+                        <div class="col-3 text-end" id="addGameBtnDiv">
+                            <button class="btn btn-outline-success rounded-pill ms-5" id="btnModalOpen" data-bs-toggle="modal"
+                                data-bs-target="#modalJuegos"><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <!-- TABLA  -->
+                    <div class="mx-3 table-responsive">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="text-center">Código</th>
+                                    <th scope="col" class="text-center">Nombre</th>
+                                    <th scope="col" class="text-center">Categoría</th>
+                                    <th scope="col" class="text-center">Descripcion</th>
+                                    <th scope="col" class="text-center">Ingredientes</th>
+                                    <th scope="col" class="text-center">Pasos</th>
+                                    <th scope="col" class="text-center">Publicado</th>
+                                    <th scope="col" class="text-center">Recomendado</th>
+                                    <th scope="col" class="text-center">Imagen</th>
+                                    <th scope="col" class="text-center">Opciones</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <!--
+            ======================================
+            ==   MODAL DE CREACION DE JUEGO     ==
+            ====================================== -->
+            <section id="adminModal">
+                <!-- MODAL -->
+                <div class="modal fade" id="modalJuegos" tabindex="-1" aria-labelledby="modalJuegosLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalJuegosLabel">Agregar juego</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- FORMULARIO DE CREACION DE JUEGO  -->
+                                <form id="gameForm" onsubmit="saveGame(event)">
+                                    <!-- CODIGO  -->
+                                    <div class="mb-3">
+                                        <label for="gameCode" class="form-label" id="labelCode">Codigo  <span class="text-danger">*</span></label>
+                                        <input type="number" class="form-control" id="gameCode" name="gameCode" placeholder="Ingrese el codigo unico del prodcuto" required min="1">
+                                    </div>
+                                    <!-- NOMBRE  -->
+                                    <div class="mb-3">
+                                        <label for="gameName" class="form-label">Nombre  <span class="text-danger">*</span></label>
+                                        <input type="text" class="form-control" id="gameName" name="gameName" placeholder="Ingrese el nombre del producto" minlength="1" maxlength="30">
+                                    </div>
+                                    <!-- CATEGORIA  -->
+                                    <div class="mb-3">
+                                        <label for="gameCategorie" class="form-label">Categoria  <span class="text-danger">*</span></label>
+                                        <select class="form-select" name="gameCategorie" id="gameCategorie" required>
+                                            <option value="Chocolate">Chocolate</option>
+                                            <option value="Helada">Heladas</option>
+                                            <option value="Frutal">Frutales</option>
+                                        </select>
+                                    </div>
+                                    <!-- DESCRIPCION  -->
+                                    <div class="mb-3">
+                                        <label for="gameDescription" class="form-label">Descripcion  <span class="text-danger">* Precionar ENTER cada 40 caracteres</span></label>
+                                        <textarea type="text" id="gameDescription" class="form-control" name="gameDescription" placeholder="Ingrese la descripcion del producto" required minlength="3" maxlength="100"></textarea>
+                                    </div>
+                                    <!-- Ingredientes  -->
+                                    <div class="mb-3">
+                                        <label for="gameIngredents" class="form-label">Ingredientes  <span class="text-danger">* Agregar una COMA (,) por cada ingrediente</span></label>
+                                        <textarea type="text" class="form-control" id="gameIngredents" name="gameIngredents" placeholder="Ingrese los ingredientes" required maxlength="1000" rows="10" cols="50"></textarea>
+                                    </div>
+                                    <!-- Pasos  -->
+                                    <div class="mb-3">
+                                        <label for="gameSteps" class="form-label">Pasos a seguir  <span class="text-danger">* Agregar una COMA (,) por cada paso</span></label>
+                                        <textarea type="text" class="form-control" id="gameSteps" name="gameSteps" placeholder="Ingrese los pasos a seguir" required maxlength="1500" rows="10" cols="50"></textarea>
+                                    </div>
+                                    <!-- IMAGEN  -->
+                                    <div class="mb-3">
+                                        <label for="gameIMG" class="form-label">Imagen  <span class="text-danger">*</span></label>
+                                        <input type="url" class="form-control" id="gameIMG" name="gameIMG" placeholder="Ingrese la imagen del producto" required >
+                                    </div>
+                                    <!-- VIDEO  -->
+                                    <div class="mb-3">
+                                        <label for="gameVideo" class="form-label">Video  <span class="text-danger">*</span></label>
+                                        <input type="url" class="form-control" id="gameVideo" name="gameVideo" placeholder="Ingrese un video del producto" required>
+                                    </div>
+                                    <!-- PUBLICACION  -->
+                                    <div class="my-4 form-check">
+                                        <input type="checkbox" class="form-check-input" id="gamePublicated" name="gamePublicated">
+                                        <label class="form-check-label" for="gamePublicated">Publicar</label>
+                                    </div>
+                                    <div class="my-4 form-check">
+                                        <input type="checkbox" class="form-check-input" id="gameRecomended" name="gameRecomended">
+                                        <label class="form-check-label" for="gameRecomended">Añadir a recomendados</label>
+                                    </div>
+                                    <span class="text-danger">* Requerido</span>
+                                    <!-- BOTON DE GUARDADO  -->
+                                    <div class="modal-footer">
+                                        <button type="submit" class="btn btn-success" id="modalSaveBtn">Agregar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <h6>About</h6>
+                    <p class="text-justify"><i>Algo sobre nosotros </i> Somos creadores de recetas</recetas>
+                    </p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Categories</h6>
+                    <ul class="footer-links">
+                        <li><a href="#chocolate">Chocolate</a></li>
+                        <li><a href="#frutales">Frutales</a></li>
+                        <li><a href="#vasos">En vaso</a></li>
+                        <li><a href="#heladas">Heladas</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
+                    <h6>Quick Links</h6>
+                    <ul class="footer-links">
+                        <li><a href="/pages/nosotros.html">About Us</a></li>
+                        <li><a href="/pages/404.html">Contact Us</a></li>
+                        <li><a href="https://www.google.com/maps/place/RollingCode+School/@-26.837036,-65.2086502,16.71z/data=!4m5!3m4!1s0x94225d3ad7f30f1d:0xf8606cd659b8e3e4!8m2!3d-26.8367009!4d-65.2072018"
+                                target="_blank">Sitemap</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
+                        <a href="/pages/nosotros.html" style="text-decoration:none;">NOSOTROS</a>.
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <ul class="social-icons">
+                        <li><a class="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
+                        <li><a class="twitter" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
+                        <li><a class="dribbble" href="https://dribble.com/"><i class="fa fa-dribbble"></i></a></li>
+                        <li><a class="linkedin" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/admin.js"></script>
+</body>
+
+</html>

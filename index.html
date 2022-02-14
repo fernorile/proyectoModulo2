@@ -74,7 +74,7 @@
                                 <div class="btnSearch">
                                     <i class="fas fa-search"></i>
                                 </div>
-                                <input type="text" placeholder="Buscar">
+                                <input type="text" placeholder="Buscar" id="indexSearcher">
                             </div>
                         </div>
                         <!--
@@ -82,9 +82,11 @@
                         ==		     	  CARRO     	    ==
                         ====================================== -->
                         <div class="col-lg-2 col-sm-4 indexCartContainer">
-                            <a href="#" class="text-decoration-none fs-5"> <i class="fas fa-shopping-cart"></i>
-                                Carro</a>
+                            <a href="/pages/login.html"" class="text-decoration-none fs-5"> Iniciar sesión</a>
                         </div>
+                    </div>
+                    <div id="searcherResults">
+
                     </div>
                 </div>
             </section>
@@ -102,21 +104,19 @@
                         <div class="row g-0">
                             <!-- IMAGEN DEL JUEGO DESTACADO  -->
                             <div class="col-lg-8 mainGameCardIMG">
-                                <img src="https://vod-hogarmania.atresmedia.com/hogarmania/images/images01/2020/11/06/5fa535ccb966010001e18446/1239x697.jpg"
-                                    class="img-fluid" alt="Juego destacado">
+                                <img
+                                    class="img-fluid" alt="Juego destacado" id="cardMainIMG">
                             </div>
                             <!-- BODY DEL JUEGO DESTACADO  -->
                             <div class="col-lg-4 d-flex align-items-center mainGameCardBody">
                                 <div class="card-body text-dark">
                                     <p class="card-text">Destacado</p>
-                                    <h1 class="card-title">FLAN CASERO</h1>
-                                    <p class="card-text">Si hay una receta tradicional y casera por excelencia es el
-                                        flan de huevo. Nada que ver con los que vienen preparados o en polvo. Un postre
-                                        auténtico, sano e ideal para disfrutar a diario.</p>
+                                    <h1 class="card-title" id="mainCardTitle"></h1>
+                                    <p class="card-text" id="mainCardDescription"></p>
                                     <!-- CATEGORIA DEL JUEGO DESTACADO  -->
                                     <div class="mainGamecategories">
                                         <a href="#sportCategorie">
-                                            <p class="btn text-dark border border-dark">Huevo</p>
+                                            <p class="btn text-dark border border-dark" id="mainCardCategorie"></p>
                                         </a>
                                     </div>
                                     <div class="mt-2 btn btn-dark text-white border" id="verMasIndex">
@@ -133,7 +133,7 @@
             ==		DESTACADOS SECUNDARIOS      ==
             ====================================== -->
             <section id="secondayMainGames">
-                <div class="secondaryGamesContainer mt-5">
+                <div class="secondaryGamesContainer mt-5" id="secondaryGamesContainerID">
                     <div class="secondaryGamesTitle">
                         <h1 class="h5 my-2">Recomendados para vos</h1>
                     </div>
@@ -141,20 +141,20 @@
                     <div class="row secondaryGamesIMGContainer">
                         <div class="col-4 secondaryIMG">
                             <a href="#">
-                                <img src="https://www.clarin.com/img/2020/07/15/la-chocotorta-perfecta-planeta___qH4UH5dLO_1200x630__1.jpg"
-                                    alt="" class="img-fluid secondaryGamesIMG">
+                                <img src=""
+                                    alt="" class="img-fluid secondaryGamesIMG" id="secondaryCard1" alt="Receta recomendada">
                             </a>
                         </div>
                         <div class="col-4 secondaryIMG">
                             <a href="#">
-                                <img src="https://badun.nestle.es/imgserver/v1/80/1290x742/2656c73d60ff-lemon-pie-de-leche-condensada.jpg"
-                                    alt="" class="img-fluid secondaryGamesIMG">
+                                <img src=""
+                                    alt="" class="img-fluid secondaryGamesIMG" id="secondaryCard2" alt="Receta recomendada">
                             </a>
                         </div>
                         <div class="col-4 secondaryIMG">
                             <a href="#">
-                                <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/413/750/products/20200911_1414281-907801586675d4fd5c15998448698354-1024-1024.jpg"
-                                    alt="" class="img-fluid secondaryGamesIMG">
+                                <img src=""
+                                    alt="" class="img-fluid secondaryGamesIMG" id="secondaryCard3" alt="Receta recomendada">
                             </a>
                         </div>
                     </div>
@@ -174,47 +174,10 @@
                                 <h1 class="h5">Chocolate</h1>
                             </div>
                             <!-- JUEGO -->
-                            <div class="d-flex flex-column">
-                                <a href="#" class="gameLink me-3">
-                                    <div class="card bg-transparent mb-4 categoriesGameCard border-0"
-                                        style="max-width: 500px;">
-                                        <div class="row g-0 mb-0">
-                                            <div>
-                                                <img src="https://media.mykaramelli.com/galeria/recetas/brownie-de-capuchino-y-nueces-de-pecan_52_1.jpg"
-                                                    class="img-fluid rounded-start secondaryGamesIMGG" alt="...">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
+                            <div id="categorie1Container">
+                                
                             </div>
-                            <!-- JUEGO -->
-                            <div class="d-flex flex-column">
-                                <a href="#" class="gameLink me-3">
-                                    <div class="card bg-transparent mb-4 categoriesGameCard border-0"
-                                        style="max-width: 500px;">
-                                        <div class="row g-0 mb-0">
-                                            <div>
-                                                <img src="https://media.mykaramelli.com/galeria/recetas/brownie-de-capuchino-y-nueces-de-pecan_52_1.jpg"
-                                                    class="img-fluid rounded-start secondaryGamesIMGG" alt="...">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            <!-- JUEGO -->
-                            <div class="d-flex flex-column">
-                                <a href="#" class="gameLink me-3">
-                                    <div class="card bg-transparent mb-4 categoriesGameCard border-0"
-                                        style="max-width: 500px;">
-                                        <div class="row g-0 mb-0">
-                                            <div>
-                                                <img src="https://media.mykaramelli.com/galeria/recetas/brownie-de-capuchino-y-nueces-de-pecan_52_1.jpg"
-                                                    class="img-fluid rounded-start secondaryGamesIMGG" alt="...">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
+                            
                         </div>
 
                         <!-- CATEGORIA 2  -->
@@ -223,7 +186,9 @@
                                 <h1 class="h5">Heladas</h1>
                             </div>
                             <!-- JUEGO -->
-                            
+                            <div id="categorie2Container">
+
+                            </div>
                         </div>
 
                         <!-- CATEGORIA 3  -->
@@ -232,7 +197,9 @@
                                 <h1 class="h5">Frutales</h1>
                             </div>
                             <!-- JUEGO -->
-                            
+                            <div id="categorie3Container">
+
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -291,9 +258,6 @@
         </div>
     </footer>
     </div>
-    <footer>
-
-    </footer>
     <script src="/js/bootstrap.js"></script>
     <script src="/js/index.js"></script>
 </body>
