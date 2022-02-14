@@ -16,6 +16,11 @@ body{
   font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   background-color: #edddd4;
 }
+.nav-link {
+  color: rgba(255, 255, 255, 0.734) !important;
+  font-size: 1.1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
 .nav-link:hover {
     color: white !important;

@@ -13,7 +13,8 @@
     <!-- Link de estilos de bootstrap -->
     <link rel="stylesheet" href="/styles/bootstrap.css">
     <!-- Link de estilos propios del indexx -->
-    <link rel="stylesheet" href="/styles/stylesIndex.css">    
+    <link rel="stylesheet" href="/styles/stylesIndex.css">
+    <link rel="stylesheet" href="/styles/stylesLogin.css">    
     <link rel="stylesheet" href="/styles/styleRegister.css">
     <title>DELCIAS</title>
 </head>
@@ -51,7 +52,7 @@
                                 <a class="nav-link" id="nav-link" href="/pages/register/register.html">Registrarse  |</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="username" aria-current="page" href="/pages/Login/login.html"> Login</a>
+                                <a class="nav-link" id="username" aria-current="page" href="/pages/Login/login.html">Login</a>
                             </li>
                         </ul>
                     </div>
@@ -62,13 +63,13 @@
     
 
     <main>
-        <div class="containerRegister">
+        <div id="loginContainer" class="containerRegister">
             <div class="imgLogo">
                 <div class="registerlogo">
                     <h2>Pasteleria</h2>
                 </div>
                 <div class="registerSingUp">
-                    <h2>SIGN UP</h2>
+                    <h2>SIGN IN</h2>
                     <hr>
                 </div>
             </div>
@@ -76,42 +77,42 @@
                 <img src="/assets/img/next.png" alt="">
             </div>
             <div class="formRegister">
-                <form id="formJs" onsubmit="registerUser(event)">
-                    <div class="styleDivInput">
-                        <label for="fullName" class="styleLabel">NAME</label><br>
-                        <input type="text" id="fullName" class="styleInput" name="fullName" required>
-                    </div>
-                    <div class="styleDivInput">
-                        <label for="password" class="styleLabel">PASSWORD</label><br>
-                        <input type="password" id="password" name="password" class="styleInput" required>
-                    </div>
+                <form id="formLogin" onsubmit="loginUser(event)">
+              
                     <div class="styleDivInput">
                         <label for="email" class="styleLabel">EMAIL</label><br>
                         <input type="email" id="email" name="email" class="styleInput" required>
                     </div>
                     <div class="styleDivInput">
-                        <button type="submit" class="styleButtonForm">SING UP</button>
+                        <label for="password" class="styleLabel">PASSWORD</label><br>
+                        <input type="password" id="password" name="password" class="styleInput" required>
+                    </div>
+            
+                    <div class="styleDivInput">
+                        <button type="submit" class="styleButtonForm">SING IN</button>
                     </div>
                     <div class="registerAccountWith">
                         <div class="registerParraf">
-                            <h4>
-                                Create account with
-                            </h4>
+                            <a href="#">
+                                Did you forget your password? recover
+                            </a>
                             <hr>
-                        </div>
-                        <div class="registerIcon">
-                            <a href="/pages/404.html"><img src="/assets/img/buscar.png " alt=""></a>
-                        </div>
-                        <div class="registerIcon">
-                            <a href="/pages/404.html"><img src="/assets/img/facebook.png" alt=""></a>
                         </div>
                     </div>
             </div>
             </form>
         </div>
+        <div class="containerUserLogged">
+            <div class="loginWelcome">
+                <h2 id="welcome-user"></h2>
+                <hr>
+            </div>
+           
+        </div>
         </div>
     </main>
     
+    <script src="/JS/login/login.js"></script>
     <script src="/JS/register/register.js"></script>
     <script src="/JS/bootstrap.js"></script>
 </body>

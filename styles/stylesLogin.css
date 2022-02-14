@@ -1,0 +1,19 @@
+.containerUserLogged {
+  width: 70%;
+  height: 80vh;
+  margin: 0 auto;
+  margin-top: 100px;
+  box-shadow: 7px 7px 25px 1px #283d3b;
+  background: linear-gradient(#772e25, #c44536);
+  border-radius: 10px 0 0 10px;
+}
+
+.loginWelcome h2{
+  margin-top: 120px !important;
+  font-family: 'Roboto', sans-serif !important;
+  font-family: 'Roboto Slab', serif !important;
+  font-size: 100px !important;
+  font-weight: 900 !important;
+  color: #edddd4 !important;
+  text-align: center;
+}

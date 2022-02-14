@@ -1,7 +1,17 @@
+
+window.addEventListener("load", function () {
+    const { userLogged } = findUserLogged();
+    if (userLogged) {
+     const userNameAnchor = document.querySelector("#username");
+      userNameAnchor.innerHTML = userLogged[0].fullName;
+    }
+  });
+
 let users = JSON.parse(localStorage.getItem("users")) || [];
 localStorage.setItem("users", JSON.stringify(users));
 users = localStorage.getItem("users");
 users = JSON.parse(users);
+  
 
 class User {
     constructor(fullName, email, password, canAccess = true) 
@@ -12,6 +22,7 @@ class User {
         this.password = password;
         this.canAccess = canAccess;
         this.role = "CLIENT_ROLE";
+        this.isLogged = false;
     }
 }
 
@@ -26,3 +37,10 @@ const registerUser = (evt) => {
     localUsers.push(user);
     localStorage.setItem("users", JSON.stringify(localUsers));
 }
+
+const findUserLogged = () => {
+    const userLogged = users.filter((user) => user.isLogged);
+    return {
+      userLogged,
+    };
+  };
