@@ -1,0 +1,552 @@
+/*
+======================================
+==		     	  NAV   	       ==
+====================================== */
+
+.nav-link:hover {
+    color: white !important;
+}
+
+/*  ================
+    =    HEADER    =
+    ================ */
+
+.logo {
+    margin-left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar {
+    background: linear-gradient(#772e25, #c44536);
+    position: static;
+}
+
+.navbar-container {
+    float: right;
+    margin: auto;
+    margin-right: 0;
+}
+
+.navbar-sections {
+    justify-content: end;
+}
+
+#nav-link {
+    color: rgba(255, 255, 255, 0.734);
+    font-size: 1.1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/*
+======================================
+==		     	 BODY   	         ==
+====================================== */
+
+body {
+    background-color: #edddd4;
+}
+
+/*
+======================================
+==	     	  BUSCADOR   	        ==
+====================================== */
+
+#searchSection .SearchContainer {
+    position: absolute;
+    padding: 0.3rem;
+}
+
+#searchSection .SearchContainer input {
+    width: 0;
+    height: 2.5rem;
+    padding: 0 1.25rem;
+    font-size: 1.125rem;
+    color: rgb(32, 32, 32);
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 1.9rem;
+    transition: all 0.6s ease;
+}
+
+#searchSection .SearchContainer .btnSearch {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: linear-gradient(#772e25, #c44536);
+    width: 3.4rem;
+    height: 3.4rem;
+    line-height: 3.4rem;
+    text-align: center;
+    color: white;
+    font-size: 1.25rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#searchSection .SearchContainer:hover input {
+    width: 15rem;
+}
+
+#searchSection .SearchContainer input:focus {
+    width: 15rem;
+}
+
+/*
+======================================
+==		     	  CARRITO 	        ==
+====================================== */
+.indexCartContainer {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.indexCartContainer a {
+    margin-top: 1rem;
+    text-align: right;
+    color: rgb(32, 32, 32);
+    ;
+    transition: all 0.2s ease;
+}
+
+.indexCartContainer a:hover {
+    color: #772e25;
+}
+
+
+/*
+======================================
+==		    DESTACADO PRINCIPAL     ==
+====================================== */
+
+/* .mainGameCardContainer .mainGameCard .mainGameCardBody .mainGamecategories p {
+    cursor: auto;
+} */
+
+.mainGameCardContainer .mainGameCard .mainGameCardBody {
+    background-color: rgba(24, 23, 23, 0.13);
+}
+
+.mainGameCardContainer .mainGameCard .mainGameCardIMG img {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+#verMasIndex {
+    background: linear-gradient(#772e25, #c44536);
+}
+
+/*
+======================================
+==    DESTACADOS SECUNDARIOS     	==
+====================================== */
+
+
+.secondaryGamesIMG {
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 1);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.secondaryGamesTitle h1 {
+    color: rgb(32, 32, 32);
+}
+
+.mainGameCard {
+    box-shadow: 0px 15px 25px rgba(0, 0, 0, 1);
+}
+
+/*
+======================================
+==		 CATEGORIAS     	         ==
+====================================== */
+
+.categoriesContainer .categorie {
+    border-right: 2px solid;
+    /* rgb(134, 134, 134); */
+}
+
+.categoriesContainer .categorie a {
+    text-decoration: none;
+}
+
+
+.categoriesContainer .categorie .categoriesGameCard {
+    padding: 10px;
+    align-items: center;
+}
+
+.secondaryGamesIMGG {
+    width: 600px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.categoriesContainer .categorie .categoriesGameCard .categorieCardIMG img {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
+
+#categorieBodyContainer {
+    color: rgb(32, 32, 32);
+    ;
+}
+
+.categorie {
+    margin-top: 35px;
+}
+
+
+
+
+/*
+======================================
+==		      FOOTER     	       ==
+====================================== */
+
+.site-footer {
+    background-color: #26272b;
+    padding: 45px 0 20px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+}
+
+.site-footer hr {
+    border-top-color: #bbb;
+    opacity: 0.5
+}
+
+.site-footer hr.small {
+    margin: 20px 0
+}
+
+.site-footer h6 {
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 5px;
+    letter-spacing: 2px
+}
+
+.site-footer a {
+    color: #737373;
+}
+
+.site-footer a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links {
+    padding-left: 0;
+    list-style: none
+}
+
+.footer-links li {
+    display: block
+}
+
+.footer-links a {
+    color: #737373
+}
+
+.footer-links a:active,
+.footer-links a:focus,
+.footer-links a:hover {
+    color: #3366cc;
+    text-decoration: none;
+}
+
+.footer-links.inline li {
+    display: inline-block
+}
+
+.site-footer .social-icons {
+    text-align: right
+}
+
+.site-footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 6px;
+    margin-right: 0;
+    border-radius: 100%;
+    background-color: #33353d
+}
+
+.copyright-text {
+    margin: 0
+}
+
+@media (max-width:991px) {
+    .site-footer [class^=col-] {
+        margin-bottom: 30px
+    }
+}
+
+@media (max-width:767px) {
+    .site-footer {
+        padding-bottom: 0
+    }
+
+    .site-footer .copyright-text,
+    .site-footer .social-icons {
+        text-align: center
+    }
+}
+
+.social-icons {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-bottom: 4px
+}
+
+.social-icons li.title {
+    margin-right: 15px;
+    text-transform: uppercase;
+    color: #96a2b2;
+    font-weight: 700;
+    font-size: 13px
+}
+
+.social-icons a {
+    background-color: #eceeef;
+    color: #818a91;
+    font-size: 16px;
+    display: inline-block;
+    line-height: 44px;
+    width: 44px;
+    height: 44px;
+    text-align: center;
+    margin-right: 8px;
+    border-radius: 100%;
+    -webkit-transition: all .2s linear;
+    -o-transition: all .2s linear;
+    transition: all .2s linear
+}
+
+.social-icons a:active,
+.social-icons a:focus,
+.social-icons a:hover {
+    color: #fff;
+    background-color: #29aafe
+}
+
+.social-icons.size-sm a {
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    font-size: 14px
+}
+
+.social-icons a.facebook:hover {
+    background-color: #3b5998
+}
+
+.social-icons a.twitter:hover {
+    background-color: #00aced
+}
+
+.social-icons a.linkedin:hover {
+    background-color: #007bb6
+}
+
+.social-icons a.dribbble:hover {
+    background-color: #ea4c89
+}
+
+@media (max-width:767px) {
+    .social-icons li.title {
+        display: block;
+        margin-right: 0;
+        font-weight: 600
+    }
+}
+
+
+
+/*
+======================================
+==		     MEDIA QUERY     	    ==
+====================================== */
+
+/* BUSCADOR  */
+
+@media screen and (max-width: 1280px) {
+
+    /* BUSCADOR  */
+    #searchSection .SearchContainer input {
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width: 435px) {
+
+    /* BUSCADOR  */
+    #searchSection .SearchContainer {
+        width: 88%;
+        display: flex;
+    }
+
+    #searchSection .SearchContainer input {
+        flex-grow: 1;
+    }
+}
+
+
+/* CARRITO */
+
+@media screen and (max-width: 435px) {
+
+    /* CARRITO  */
+    .indexCartContainer {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 55px;
+    }
+}
+
+
+
+@media screen and (max-width: 520px) {
+
+    /* card principal  */
+    .mainGameCardContainer .mainGameCard .mainGameCardBody .card-body {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+
+    /* card principal  */
+    .mainGameCardContainer .primaryGamesTitle {
+        color: rgb(134, 134, 134);
+        display: inline-block !important;
+    }
+
+}
+
+
+/* DESTACADOS SECUNDARIOS  */
+
+@media screen and (max-width: 991px) {
+
+    /* cards secundarias  */
+    .secondaryGamesContainer .secondaryGamesIMGContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .secondaryGamesContainer .secondaryGamesIMGContainer .secondaryIMG {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-left: 12px !important;
+        padding-right: 12px !important;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+    }
+
+    .secondaryGamesContainer {
+        margin: 25px;
+    }
+}
+
+
+/* CATEGORIAS  */
+
+@media screen and (max-width: 1200px) {
+
+    /* cards categorias  */
+    .categoriesContainer div {
+        flex-direction: column !important;
+        width: 100%;
+        border: none !important;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .secondaryGamesIMGG {
+        width: 500px;
+        height: 250px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    /* cards categorias  */
+    .categoriesContainer .categorie .secondaryGamesTitle h1 {
+        text-align: center;
+        ;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    /* cards categorias  */
+    .categoriesContainer .categorie {
+        margin-right: 0 !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    /* cards categorias  */
+    .categoriesContainer .categorie .gameLink {
+        margin-right: 0 !important;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    /* cards categorias  */
+    .categoriesContainer .categorie .gameLink .categoriesGameCard .card-body {
+        text-align: center;
+        ;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    /* cards categorias  */
+    .categoriesContainer .categorie .gameLink .categoriesGameCard .card-body .categoriePrice {
+        flex-direction: row !important;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 445px) {
+
+    /* cards categorias  */
+    .secondaryGamesIMGG {
+        width: 300px;
+        height: 150px;
+    }
+}

@@ -1,210 +1,254 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sp">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="keywords" content="Recetas, pasteleria, cocina">
+    <meta name="description" content="Página web sobre recetas de pasteleria">
+    <meta name="author" content="GrupoRC">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link de estilos de bootstrap -->
+    <!-- ESTILOS BOOSTSTRAP  -->
     <link rel="stylesheet" href="/styles/bootstrap.css">
-    <!-- Link de estilos propios del indexx -->
-    <link rel="stylesheet" href="/styles/stylesIndex.css">
-
-    <title>DELICIAS</title>
+    <!-- ESTILOS PROPIOS DEL INDEX  -->
+    <link rel="stylesheet" href="/styles/stylesIndexNew.css">
+    <!-- FONT AWESOME  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Proyecto 2 Grupo 3</title>
 </head>
 
-
 <body>
-    <!-- ====================
-    ==       HEADER        ==
-    ========================= -->
-    <div id="header">
-        <header>
-            <!-- navbar open -->
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top m-0 px-3">
-                <div class="navbar-container container-fluid m-0 p-0">
-                    <!-- LOGO -->
-                    <a class="logo" href="/index.html">
-                        <img src="/assets/img/cake_logo1.png" alt="logo cake" width="45" height="45">
-                    </a>
-                    <!-- MENU DEBLEGABLE -->
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-                        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon">
+    <header>
+        <!-- navbar open -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top m-0 px-3">
+            <div class="navbar-container container-fluid m-0 p-0">
+                <!-- LOGO -->
+                <a class="logo" href="/index.html">
+                    <img src="/assets/img/cake_logo1.png" alt="logo cake" width="45" height="45">
+                </a>
+                <!-- MENU DEBLEGABLE -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
                         <i class="fas fa-bars" style="color:rgba(255, 255, 255, 0.575); font-size:25px;"></i>
-                        </span>
-                    </button>
-                    <!-- MENU -->
-                    <div class="navbar-sections float-r collapse navbar-collapse flex-grow-1 me-0"  id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link" id="nav-link" href="/pages/nosotros.html">Quienes somos  |</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="nav-link" href="/pages/contacto.html">Contacto  |</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="nav-link" href="/pages/register/register.html">Registrarse  |</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" id="nav-link" aria-current="page" href="/pages/login.html"> Login</a>
-                            </li>
-                        </ul>
-                    </div>
+                    </span>
+                </button>
+                <!-- MENU -->
+                <div class="navbar-sections float-r collapse navbar-collapse flex-grow-1 me-0" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-link" href="/pages/nosotros.html">Quienes somos |</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-link" href="/pages/contacto.html">Contacto |</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-link" href="/pages/register/register.html">Registrarse |</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav-link" aria-current="page" href="/pages/login.html"> Login</a>
+                        </li>
+                    </ul>
                 </div>
-            </nav>
-        </header>
-    </div>
-            
-
-    <!--============
-        MAIN
-        ============ -->
+            </div>
+        </nav>
+    </header>
     <main>
-            <!--===============================
-                ==  CARD DESTACADA DEL MAIN  ==
-                =============================== --> 
-        <div class="seccionDestacada row justify-content-center">        
-            <div id="cardDestacada" class="card mb-3" style="max-width: 80%;">            
-                <div class="row g-0">
-                    <div class="col-sm-12 col-md-8 col-lg-6">
-                        <a href="/pages/404.html">
-                            <img src="/assets/img/flanCard3.jpg" class="img-fluid rounded-start" alt="...">
-                        </a>
-                    </div>
-                    <div class="col-sm-0 col-md-4 col-lg-6">
-                        <div class="card-body">
-                            <h3 class="card-title">Flan casero</h3>
-                            <hr>
-                            <p class="card-text">Si hay una receta tradicional y casera por excelencia es el flan de huevo. Nada que ver con los que vienen preparados o en polvo. Un postre auténtico, sano e ideal para disfrutar a diario.</p>
-                            <p class="card-text"><small class="text-muted">Autor: Gordon Ramsey</small></p>
+        <div class="indexMainContainer container-lg">
+            <!--
+            ======================================
+            ==		     BUSCADOR 	            ==
+            ====================================== -->
+            <section id="searchSection">
+                <div class="container-lg mt-4">
+                    <div class="row">
+                        <!--
+                        ======================================
+                        ==		    INPUT BUSCADOR         ==
+                        ====================================== -->
+                        <div class="col-lg-10 col-sm-8 p-0">
+                            <div class="SearchContainer">
+                                <div class="btnSearch">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                <input type="text" placeholder="Buscar">
+                            </div>
+                        </div>
+                        <!--
+                        ======================================
+                        ==		     	  CARRO     	    ==
+                        ====================================== -->
+                        <div class="col-lg-2 col-sm-4 indexCartContainer">
+                            <a href="#" class="text-decoration-none fs-5"> <i class="fas fa-shopping-cart"></i>
+                                Carro</a>
                         </div>
                     </div>
-                    
                 </div>
-            </div>   
-        </div>
-        <hr>
-        <!--======================
-                SECCION CATEGORIAS
-            ====================== -->
-        <section class="categorias">       
-            <h5 id="chocolate" style="margin-left: 25px;"><b>Con chocolate</b></h5>
-            <div class="row mx-auto cardInfoContainer">
-                <div class="card cardInfo m-4">
-                    <a href="/pages/ConChocolate/chocotorta.html">
-                        <img src="/assets/img/conChocolate/chocotortaCard1.jpg" class="" alt="...">
-                    </a>
-                </div>
-                <div class="card cardInfo m-4 " style="width: 10rem;">
-                    <a href="/pages/ConChocolate/brownie.html">
-                        <img src="/assets/img/conChocolate/brownie.png" class="" alt="...">
-                    </a>
-                </div>
-                <div class="card cardInfo m-4 " style="width: 10rem;">
-                    <a href="/pages/ConChocolate/oreo.html">
-                        <img src="/assets/img/conChocolate/tartaoreo.jpg" style="max-width: fit-content;"class="" alt="...">
-                    </a>
-                </div>
-                <div class="card cardInfo m-4 " style="width: 10rem;">
-                    <a href="/pages/ConChocolate/cabsha.html">
-                        <img src="/assets/img/conChocolate/tartaCabsha.png" class="" alt="...">
-                    </a>
-                </div>
-            </div>
-
-            <hr>
-
-            <h5 id="heladas" style="margin-left: 25px;"><b>Heladas</b></h5>
-            <div class="row justify-content-center mx-auto">
-                <div class="card m-4 col-sm-12 col-md-6 col-lg-3" style="width: 8rem;">
-                    <a href="/pages/Heladas/dulceDeLeche.html">
-                        <img src="/assets/img/heladas/dulce-de-leche.jpg" class="" alt="...">
-                    </a>
+            </section>
+            <!--
+            ======================================
+            ==  	  DESTACADO PRINCIPAL       ==
+            ====================================== -->
+            <section id="mainGame">
+                <!-- CONTENEDOR JUEGO DESTACADO  -->
+                <div class="mainGameCardContainer my-4">
+                    <div class="primaryGamesTitle d-none">
+                        <h1 class="h5 my-2 text-dark">Novedad destacada</h1>
                     </div>
-                <div class="card m-4 card col-sm-12 col-md-6 col-lg-3" style="width: 10rem;">
-                    <a href="/pages/Heladas/wisky.html">
-                        <img src="/assets/img/heladas/wisky.jpg" class="" alt="...">
-                    </a>
-                </div>
-                <div class="card m-4 card col-sm-12 col-md-6 col-lg-3" style="width: 10rem;">
-                    <a href="/pages/Heladas/limon.html">
-                        <img src="/assets/img/heladas/limon.jpg" class="" alt="...">
-                    </a>
-                </div>
-                <div class="card m-4 card col-sm-12 col-md-6 col-lg-3" style="width: 10rem;">
-                    <a href="/pages/Heladas/conCafe.html">
-                        <img src="/assets/img/heladas/conCafejpg.jpg" class="" alt="...">
-                    </a>
-                </div>
-            </div>
-            
-            <hr>
-
-            <h5 id="frutales" style="margin-left: 25px;"><b>Frutales</b></h5>
-            <div class="row justify-content-center mx-auto">
-                <div class="card m-4 col-sm-12 col-md-6 col-lg-3" style="width: 8rem;">
-                    <a href="/pages/Frutales/manzana.html">
-                        <img src="/assets/img/conFrutas/tarta-de-manzana.jpg" class="" alt="...">
-                    </a>
+                    <div class="card mb-3 border-0 mainGameCard bg-transparent">
+                        <div class="row g-0">
+                            <!-- IMAGEN DEL JUEGO DESTACADO  -->
+                            <div class="col-lg-8 mainGameCardIMG">
+                                <img src="https://vod-hogarmania.atresmedia.com/hogarmania/images/images01/2020/11/06/5fa535ccb966010001e18446/1239x697.jpg"
+                                    class="img-fluid" alt="Juego destacado">
+                            </div>
+                            <!-- BODY DEL JUEGO DESTACADO  -->
+                            <div class="col-lg-4 d-flex align-items-center mainGameCardBody">
+                                <div class="card-body text-dark">
+                                    <p class="card-text">Destacado</p>
+                                    <h1 class="card-title">FLAN CASERO</h1>
+                                    <p class="card-text">Si hay una receta tradicional y casera por excelencia es el
+                                        flan de huevo. Nada que ver con los que vienen preparados o en polvo. Un postre
+                                        auténtico, sano e ideal para disfrutar a diario.</p>
+                                    <!-- CATEGORIA DEL JUEGO DESTACADO  -->
+                                    <div class="mainGamecategories">
+                                        <a href="#sportCategorie">
+                                            <p class="btn text-dark border border-dark">Huevo</p>
+                                        </a>
+                                    </div>
+                                    <div class="mt-2 btn btn-dark text-white border" id="verMasIndex">
+                                        <a href="#" class="text-decoration-none text-white">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                <div class="card m-4 card col-sm-12 col-md-6 col-lg-3" style="width: 10rem;">
-                    <a href="/pages/Frutales/frutilla.html">
-                        <img src="/assets/img/conFrutas/tartafrutilla.jpg" class="" alt="...">
-                    </a>
                 </div>
-                <div class="card m-4 card col-sm-12 col-md-6 col-lg-3" style="width: 10rem;">
-                    <a href="/pages/Frutales/pera.html">
-                        <img src="/assets/img/conFrutas/tartapera.jpg" class="" alt="...">
-                    </a>
-                </div>
-                <div class="card m-4 card col-sm-12 col-md-6 col-lg-3" style="width: 10rem;">
-                    <a href="/pages/Frutales/durazno.html">
-                        <img src="/assets/img/conFrutas/tartadurazno.jpg" class="" alt="...">
-                    </a>
-                </div>
-            </div>
-
-            <hr>
-            
-            <h5 id="vasos" style="margin-left: 25px;"><b>Individuales en vasos</b></h5>
-            <div class="row justify-content-center mx-auto">
-                <div class="card m-4 col-sm-12 col-md-6 col-lg-3" style="width: 8rem;">
-                    <a href="/pages/EnVasito/parfait.html">
-                        <img src="/assets/img/postresVaso/parfait.jpg" class="" alt="...">
-                    </a>
+            </section>
+            <!--
+            ======================================
+            ==		DESTACADOS SECUNDARIOS      ==
+            ====================================== -->
+            <section id="secondayMainGames">
+                <div class="secondaryGamesContainer mt-5">
+                    <div class="secondaryGamesTitle">
+                        <h1 class="h5 my-2">Recomendados para vos</h1>
                     </div>
-                <div class="card m-4 card col-sm-12 col-md-6 col-lg-3" style="width: 10rem;">
-                    <a href="/pages/EnVasito/budinChia.html">
-                        <img src="/assets/img/postresVaso/pudinchiaycoco.jpg" class="" alt="...">
-                    </a>
+                    <!-- IMAGENES -->
+                    <div class="row secondaryGamesIMGContainer">
+                        <div class="col-4 secondaryIMG">
+                            <a href="#">
+                                <img src="https://www.clarin.com/img/2020/07/15/la-chocotorta-perfecta-planeta___qH4UH5dLO_1200x630__1.jpg"
+                                    alt="" class="img-fluid secondaryGamesIMG">
+                            </a>
+                        </div>
+                        <div class="col-4 secondaryIMG">
+                            <a href="#">
+                                <img src="https://badun.nestle.es/imgserver/v1/80/1290x742/2656c73d60ff-lemon-pie-de-leche-condensada.jpg"
+                                    alt="" class="img-fluid secondaryGamesIMG">
+                            </a>
+                        </div>
+                        <div class="col-4 secondaryIMG">
+                            <a href="#">
+                                <img src="https://d3ugyf2ht6aenh.cloudfront.net/stores/413/750/products/20200911_1414281-907801586675d4fd5c15998448698354-1024-1024.jpg"
+                                    alt="" class="img-fluid secondaryGamesIMG">
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="card m-4 card col-sm-12 col-md-6 col-lg-3" style="width: 10rem;">
-                    <a href="/pages/EnVasito/mousse.html">
-                        <img src="/assets/img/postresVaso/mousse-de-chocolate-blanco.jpg
-                        " class="" alt="...">
-                    </a>
+            </section>
+            <!--
+            ======================================
+            ==		      CATEGORIAS     	    ==
+            ====================================== -->
+            <section id="categoriesSection">
+                <!-- CONTENEDOR DE CATEGORIAS  -->
+                <div class="categoriesContainer my-5 text-dark">
+                    <div class="row">
+                        <!-- CATEGORIA 1  -->
+                        <div class="categorie ps-4 col-4" id="sportCategorie">
+                            <div class="secondaryGamesTitle ms-2 mb-3">
+                                <h1 class="h5">Chocolate</h1>
+                            </div>
+                            <!-- JUEGO -->
+                            <div class="d-flex flex-column">
+                                <a href="#" class="gameLink me-3">
+                                    <div class="card bg-transparent mb-4 categoriesGameCard border-0"
+                                        style="max-width: 500px;">
+                                        <div class="row g-0 mb-0">
+                                            <div>
+                                                <img src="https://media.mykaramelli.com/galeria/recetas/brownie-de-capuchino-y-nueces-de-pecan_52_1.jpg"
+                                                    class="img-fluid rounded-start secondaryGamesIMGG" alt="...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- JUEGO -->
+                            <div class="d-flex flex-column">
+                                <a href="#" class="gameLink me-3">
+                                    <div class="card bg-transparent mb-4 categoriesGameCard border-0"
+                                        style="max-width: 500px;">
+                                        <div class="row g-0 mb-0">
+                                            <div>
+                                                <img src="https://media.mykaramelli.com/galeria/recetas/brownie-de-capuchino-y-nueces-de-pecan_52_1.jpg"
+                                                    class="img-fluid rounded-start secondaryGamesIMGG" alt="...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- JUEGO -->
+                            <div class="d-flex flex-column">
+                                <a href="#" class="gameLink me-3">
+                                    <div class="card bg-transparent mb-4 categoriesGameCard border-0"
+                                        style="max-width: 500px;">
+                                        <div class="row g-0 mb-0">
+                                            <div>
+                                                <img src="https://media.mykaramelli.com/galeria/recetas/brownie-de-capuchino-y-nueces-de-pecan_52_1.jpg"
+                                                    class="img-fluid rounded-start secondaryGamesIMGG" alt="...">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- CATEGORIA 2  -->
+                        <div class="categorie ps-4 col-4" id="sportCategorie">
+                            <div class="secondaryGamesTitle ms-2 mb-3">
+                                <h1 class="h5">Heladas</h1>
+                            </div>
+                            <!-- JUEGO -->
+                            
+                        </div>
+
+                        <!-- CATEGORIA 3  -->
+                        <div class="categorie ps-4 col-4 border-0" id="sportCategorie">
+                            <div class="secondaryGamesTitle ms-2 mb-3">
+                                <h1 class="h5">Frutales</h1>
+                            </div>
+                            <!-- JUEGO -->
+                            
+                        </div>
+                    </div>
                 </div>
-                <div class="card m-4 card col-sm-12 col-md-6 col-lg-3" style="width: 10rem;">
-                    <a href="/pages/EnVasito/patlovas.html">
-                        <img src="/assets/img/postresVaso/patlova.jpg" class="" alt="...">
-                    </a>
-                </div>
-            </div>
-        </section>
+            </section>
+
     </main>
-    <br><hr>
-    <!--============
-        FOOTER
-        ============ -->
     <footer class="site-footer">
-                <div class="container">
-                <div class="row">
-                    <div class="col-sm-12 col-md-6">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
                     <h6>About</h6>
-                    <p class="text-justify"><i>Algo sobre nosotros </i> Somos creadores de recetas</recetas></p>
-                    </div>
-        
-                    <div class="col-xs-6 col-md-3">
+                    <p class="text-justify"><i>Algo sobre nosotros </i> Somos creadores de recetas</recetas>
+                    </p>
+                </div>
+
+                <div class="col-xs-6 col-md-3">
                     <h6>Categories</h6>
                     <ul class="footer-links">
                         <li><a href="#chocolate">Chocolate</a></li>
@@ -213,39 +257,45 @@
                         <li><a href="#heladas">Heladas</a></li>
 
                     </ul>
-                    </div>
-        
-                    <div class="col-xs-6 col-md-3">
+                </div>
+
+                <div class="col-xs-6 col-md-3">
                     <h6>Quick Links</h6>
                     <ul class="footer-links">
                         <li><a href="/pages/nosotros.html">About Us</a></li>
-                    <li><a href="/pages/404.html">Contact Us</a></li>
-                    <li><a href="https://www.google.com/maps/place/RollingCode+School/@-26.837036,-65.2086502,16.71z/data=!4m5!3m4!1s0x94225d3ad7f30f1d:0xf8606cd659b8e3e4!8m2!3d-26.8367009!4d-65.2072018" target="_blank">Sitemap</a></li>
+                        <li><a href="/pages/404.html">Contact Us</a></li>
+                        <li><a href="https://www.google.com/maps/place/RollingCode+School/@-26.837036,-65.2086502,16.71z/data=!4m5!3m4!1s0x94225d3ad7f30f1d:0xf8606cd659b8e3e4!8m2!3d-26.8367009!4d-65.2072018"
+                                target="_blank">Sitemap</a></li>
                     </ul>
-                    </div>
                 </div>
-                <hr>
-                </div>
-                <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-sm-6 col-xs-12">
-                    <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
+            </div>
+            <hr>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
                         <a href="/pages/nosotros.html" style="text-decoration:none;">NOSOTROS</a>.
                     </p>
-                    </div>
-        
-                    <div class="col-md-4 col-sm-6 col-xs-12">
+                </div>
+
+                <div class="col-md-4 col-sm-6 col-xs-12">
                     <ul class="social-icons">
                         <li><a class="facebook" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></li>
                         <li><a class="twitter" href="https://twitter.com/"><i class="fa fa-twitter"></i></a></li>
                         <li><a class="dribbble" href="https://dribble.com/"><i class="fa fa-dribbble"></i></a></li>
-                        <li><a class="linkedin" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>   
+                        <li><a class="linkedin" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a></li>
                     </ul>
-                    </div>
                 </div>
-                </div>
+            </div>
+        </div>
     </footer>
+    </div>
+    <footer>
 
-    <script src="/JS/bootstrap.js"></script>
+    </footer>
+    <script src="/js/bootstrap.js"></script>
+    <script src="/js/index.js"></script>
 </body>
+
 </html>
